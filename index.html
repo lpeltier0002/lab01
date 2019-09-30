@@ -3,65 +3,56 @@
     <title>
       We're Just Getting Started
     </title>
+
+      <style>
+          h1 {
+            background-color: aqua;
+            color: blueviolet
+          }
+
+          h2 {
+            background-color: aquamarine;
+            color: blanchedalmond
+          }
+      </style>
   </head>
 
   <body>
 
     <header>
-        <p>Welcome</p>
+        <h1>Welcome</h1>
     </header>
   
         <main>
-            <h1>Class 1 Lab</h1>
-            <h3>Let's play a game!</h3>
+            <h2>Class 1 Lab</h2>
 
-            <p id="q1">Welcome, What is your name?</p>
-                <script>var username = prompt('Hello, what\'s your name?');
+            <script>var username = prompt('Hello, what\'s your name?');
+                    alert('I\'m very glad you stopped by, ' + username + '.');
+                    console.log(username + ' is an awesome name')
+              </script>
+
+            <p style= "background-color: lightskyblue; color: teal">Something Tasty</p>
+            <p style= "background-color: turquoise; color: mediumblue">Something Gross</p>    
+            <p style= "background-color: cadetblue; color: darkblue">And a difficult decision...</p>    
                 
-                if (username === 'Bob') {
-                    console.log(username + ' is an awesome name');
-                    alert('Great job class');
-                } else { console.log('not so awesome')}
-                
-                </script>
+              <script>var dessert = prompt('Do you like cupcakes or ice cream?');
+                  alert(dessert + ' is a good choice, ' + username + '.');
+                </script>     
 
-            <p id="q2">Pick a noun- anthing you want.</p>
-                <script>var noun = prompt('Pick a noun -anything you want');
-                        console.log('this is a username inputted: ' + username);
-                    
-                        if (username === 'Calvin') {
-                          console.log(username + ' is an awesome name');
-                          alert('Great job class');
-                        } else { console.log('not so awesome')}
-                </script>
-
-            <p id="q3">Give me a verb.</p>
-                <script>var verb = prompt('');
-                        console.log('this is a username inputted: ' + username);
-                    
-                        if (username === 'Calvin') {
-                        console.log(username + ' is an awesome name');
-                        alert('Great job class');
-                        } else { console.log('not so awesome')}
-                </script>
-            
-            <p id="q4">What about an adjective?</p>
-                <script>var adjective = prompt('please give me your name');
-                        console.log('this is a username inputted: ' + username);
-                    
-                        if (username === 'Calvin') {
-                        console.log(username + ' is an awesome name');
-                        alert('Great job class');
-                        } else { console.log('not so awesome')}
-                </script>
+              <script>var gross = prompt('What\'s the grossest thing you can think of, ' + username + '?');
+                  alert('Lots of people don\'t like ' + gross + '!');
+                </script>     
+              
+              <script>var question = prompt('Would you eat ' + gross + ' ' + dessert + ' for $100?');
+                  alert('You\'re a good sport, ' + username + '.');
+                </script>     
 
         </main>
 
     <footer>
-        <p>Thanks You!</p>
+        <h2 style= "background-color: aquamarine; color: blanchedalmond">Thanks for playing along!</h2>
     </footer>
 
   </body>
-  
 
 </html>
